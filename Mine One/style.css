@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .main {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.container.main h3 {
+    font-size: 2em;
+}
+
+.container .main p {
+    font-size: 14px;
+    margin: 0.5rem 0;
+    color: rgb(103, 110, 119);
+}
+
+.container .main button {
+    padding: 1rem 5rem;
+    color: black;
+    font-size: 16px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border: 1px solid #6f6af8;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+.container .main .primary {
+    background-color: #6f6af8;
+    color: white;
+}
+
+.container .main .primary:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: .3s ease-in-out;
+    transform: translateY(-10px);
+    transition: .3s ease;
+}
+
+.container .main .secoundary {
+    background-color: #ffffff;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+.container .main .secoundary:hover {
+    background-color: #6f6af8;
+    color: white;
+    transition: .3s ease-in-out;
+    transform: translateY(-10px);
+    transition: .3s ease;
+}
+
+.container .main .imgContainer {
+    width: 100%;
+    margin: auto;
+}
+
+.container .main .imgContainer img {
+    width: 100%;
+}
+
+/* Rating Seciton */
+.container .rating {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    color: #6f6af8;
+    margin-top: 20px;
+}
+
+.container .rating .title {
+    font-size: 1.5em;
+}
+
+.container .rating .title p {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    color: black;
+}
+
+.features .title h4 {
+    margin: 40px;
+    text-align: center;
+}
+
+.features .imgContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.features .imgContainer img {
+    width: 100%;
+    margin: auto;
+}
+
+/* Services Sections */
+.services h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #6f6af8;
+}
+
+.services .hr-line {
+    width: 100px;
+    margin-left: 270px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.services .hr-line:hover {
+    width: 200px;
+    border: 2px solid #6f6af8;
+    transition: 0.5s ease;
+}
+
+.services .ser-desc {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.container .services .service-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.container .services .service-items i {
+    color: white;
+}
+
+.container .services .service-items .ser-1 {
+    background-color: #6f6af8;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.container .services .service-items .ser-2 {
+    background-color: #6f6af8;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .services .service-items .ser-3 {
+    background-color: #6f6af8;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.container .services .service-items .ser-1 .title {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.container .services .service-items .ser-2 .title {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.container .services .service-items .ser-3 .title {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.container .services .service-items .ser-1:hover {
+    transform: translateY(-20px);
+    transition: .5s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .services .service-items .ser-2:hover {
+    transform: translateY(-20px);
+    transition: .5s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .services .service-items .ser-3:hover {
+    transform: translateY(-20px);
+    transition: .5s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Our Cilent section */
+.cilents .heading h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cilents .heading .hr-line {
+    width: 100px;
+    margin-left: 270px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.cilents .heading .hr-line:hover {
+    width: 200px;
+    border: 2px solid #6f6af8;
+    transition: 0.5s ease;
+}
+
+.cilents .heading .desc {
+    text-align: center;
+}
+
+.cilents .boxes {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    margin-bottom: 30px;
+}
+
+.cilents .boxes .imgContainers {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid black;
+    filter: grayscale(100%);
+}
+
+.cilents .boxes .imgContainers:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.cilents .boxes .imgContainers img {
+    width: 100%;
+    margin: auto;
+}
+
+.cilents .heading h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #6f6af8;
+}
+
+.cilents .heading .hr-line:hover {
+    width: 200px;
+    border: 2px solid #6f6af8;
+    transition: 0.5s ease;
+}
+
+/* Features Section */
+.container .features .heading {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    color: #6f6af8;
+    margin-top: 20px;
+}
+
+.container .features .feature-1 .imgContainer {
+    width: 90%;
+}
+
+.container .features .feature-1 .imgContainer img {
+    width: 100%;
+    margin: auto;
+}
+
+.container .features .feature-1 .subtitle h3 {
+    display: grid;
+    gap: 10px;
+    /* text-align: center; */
+    color: #6f6af8;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.container .features .feature-1 .subtitle h2 {
+    display: grid;
+    gap: 10px;
+    /* text-align: center; */
+    color: black;
+    margin: 10px 20px 20px 50px;
+}
+
+.container .features .feature-1 .subtitle p {
+    font-size: 15px;
+    justify-content: justify;
+    margin-left: 50px;
+}
+
+.container .features .feature-1 button {
+    background-color: #6f6af8;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid #6f6af8;
+    border-radius: 5px;
+    margin: 10px 40px;
+}
+
+/* Project Seneroias */
+.container .projects {
+    margin: 3rem 0;
+    
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        margin: 1rem 0;
+        color: #6f6af8;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        width: 80%;
+        margin: auto;
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 3rem 1rem;
+            text-align: left;
+            border-radius: 0.3rem;
+            width: 100%;
+
+            .imgContainer {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.container .background {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-image: linear-gradient(to right, #ae00ff,#4ca1af);
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .background .content {
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.container .background .content .title h2 {
+    margin: 1rem 0;
+}
+.container .background .content .title p {
+    margin: 1rem 0;
+    font-size: 14px;
+    color: white;
+}
+.container .background .content button {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: .3rem;
+    color: #000;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+/* Contact us section */
+@media (min-width: 768px) {
+    .container .main h3 {
+        font-size: 2.0em;
+    }
+
+    .container .main button {
+        margin: auto;
+        width: 90%;
+        margin: .5em auto;
+    }
+
+    .container .main .imgContainer {
+        width: 50%;
+    }
+
+    .container .projects .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 920px) {
+    .container .projects .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

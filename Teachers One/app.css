@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.container .main h3 {
+  font-size: 2em;
+}
+
+.container .main p {
+  font-size: 14px;
+  margin: 0.5rem 0;
+  color: rgb(103, 110, 119);
+}
+
+.container .main button {
+  padding: 1rem 5rem;
+  color: black;
+  font-size: 16px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0.5rem 0.4rem;
+  border: 1px solid #6f6af8;
+  background-color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+  width: 80%;
+}
+
+.container .main .primary {
+  background-color: #6f6af8;
+  color: white;
+}
+
+.container .main .primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.container .main .secondary:hover {
+  background-color: #6f6af8;
+  color: white;
+}
+
+.container .main .imgContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.container .main .imgContainer img {
+  width: 100%;
+}
+
+.container .projects {
+  margin: 3rem 0;
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0.8rem 0;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+
+    .project {
+      border: 1px solid rgb(216, 204, 204);
+      padding: 1rem;
+      border-radius: 0.3rem;
+      width: 100%;
+      .imgContainer {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container .main h3 {
+    font-size: 3.5em;
+  }
+  .container .main button {
+    width: auto;
+  }
+
+  .container .main .imgContainer {
+    width: 50%;
+  }
+
+  .container .projects .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 920px) {
+  .container .projects .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
