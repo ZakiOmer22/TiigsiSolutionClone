@@ -288,7 +288,7 @@ body {
 }
 
 .container .features .feature-1 .imgContainer {
-    width: 90%;
+    width: 50%;
 }
 
 .container .features .feature-1 .imgContainer img {
@@ -332,7 +332,7 @@ body {
 /* Project Seneroias */
 .container .projects {
     margin: 3rem 0;
-    
+
     h1 {
         font-size: 18px;
         text-align: center;
@@ -368,26 +368,30 @@ body {
 .container .background {
     width: 100%;
     padding: 4rem 2rem;
-    background-image: linear-gradient(to right, #ae00ff,#4ca1af);
+    background-image: linear-gradient(to right, #ae00ff, #4ca1af);
     margin: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 .container .background .content {
     width: 90%;
     margin: auto;
     color: white;
 }
+
 .container .background .content .title h2 {
     margin: 1rem 0;
 }
+
 .container .background .content .title p {
     margin: 1rem 0;
     font-size: 14px;
     color: white;
 }
+
 .container .background .content button {
     margin: 1rem 0;
     padding: 1rem 2rem;
@@ -402,23 +406,296 @@ body {
 }
 
 /* Contact us section */
+.container .contact .main {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.container .contact .main .contactForm h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.container .contact .main .contactForm p {
+    color: gray;
+    padding: 1rem 0;
+}
+
+.container .contact .main .contactForm form {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.container .contact .main .contactForm form input {
+    width: 500px;
+    padding: 14px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contact .main .contactForm form textarea {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contact .main .contactForm form button {
+    padding: .8rem 1rem;
+    font-size: 16px;
+    background-color: #6f6af8;
+    border: none;
+    color: #fff;
+    border-radius: .3rem;
+    margin: 1rem 0;
+    box-shadow: #0000001a 0 4px 12px;
+    transition: all .3s ease;
+}
+
+/* Contact Info Section */
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items evenly */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if needed */
+    gap: 2rem;
+    /* Add spacing between items */
+}
+
+/* Image Container */
+.ImgContainer {
+    flex: 0 0 auto;
+    /* Don't grow or shrink, maintain initial size */
+    width: 100%;
+    text-align: center;
+}
+
+/* Email Section, PhoneNum, Location, SocialMedia */
+.emailSection,
+.PhoneNum,
+.Location,
+.SocialMedia {
+    flex: 1 1 100%;
+    /* Allow items to grow, but don't shrink */
+    text-align: center;
+}
+
+/* SVG Icons */
+.contactInfo svg {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Phone Number */
+.PhoneNum {
+    margin-top: 1rem;
+}
+
+/* Social Media Icons */
+.SocialMedia {
+    margin-top: 1rem;
+}
+
+/* Social Media Icons - Individual */
+.SocialMedia a {
+    margin-right: 1rem;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    background-color: #001529;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    padding: 2rem;
+    color: #789;
+}
+
+.footer .footer-container h3 {
+    color: #fff;
+}
+
+.footer .footer-container .logo {
+    width: 50%;
+}
+
+.footer .footer-container .logo img {
+    padding: .5rem 2rem;
+    box-shadow: #959da533 0 8px 24px;
+    margin: 1rem 0;
+    border-radius: .3rem;
+    background-color: #fff;
+    width: 80%;
+}
+
+.footer .footer-container .pages {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.footer .footer-container .pages a {
+    text-decoration: none;
+    color: gray;
+    padding: .3rem 0;
+}
+
+.footer .footer-container .pages a:hover {
+    color: #d3d3d3;
+}
+
+.footer .footer-container .services {
+    margin: 1rem 0;
+}
+
+.footer .footer-container .services div {
+    padding: .3rem 0;
+}
+
+.footer .footer-container .info {
+    margin: 1rem 0;
+}
+
+.footer .footer-container .info div {
+    padding: .3rem 0;
+}
+
+.footer .footer-container .support {
+    margin: 1rem 0;
+}
+
+.footer .footer-container .support div {
+    padding: .3rem 0;
+}
+
+.footer .copyright {
+    text-align: center;
+    background-color: #001f3f;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: #64646f33 0 7px 29px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer .bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.footer .bg-image img {
+    width: 90%;
+}
+
+.footer .back-btn {
+    position: absolute;
+    top: -1.5rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer .back-btn div {
+    background-color: #001529;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Contact us section */
 @media (min-width: 768px) {
     .container .main h3 {
-        font-size: 2.0em;
+        font-size: 3.5em;
     }
 
     .container .main button {
-        margin: auto;
-        width: 90%;
-        margin: .5em auto;
+        width: auto;
     }
 
     .container .main .imgContainer {
         width: 50%;
     }
-
+    /* Next Section */
+    .features .imgContainer {
+        width: 50%;
+    }
+    .services .hr-line {
+        margin-left: 950px;
+    }
+    /* Cilent sections */
+    .cilents .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Our Features II */
+    .container .features .feature-1 .imgContainer {
+        width: 40%;
+    }
+    /* Projects */
     .container .projects .projects-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer .footer-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .footer .footer-container .logo {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Cilent sections */
+    .cilents .boxes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer .footer-container {
+        grid-template-columns: repeat(5, 20%);
+        justify-content: space-between;
+    }
+
+    .footer .footer-container .logo {
+        width: 80%;
     }
 }
 
